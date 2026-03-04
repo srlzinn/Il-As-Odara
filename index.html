@@ -1,523 +1,611 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilê Asé Odara | Tradição, Fé e Ancestralidade</title>
-    
-    <!-- Meta Tags -->
-    <meta name="description" content="Tradição, Fé e Ancestralidade em cada detalhe. Artigos religiosos afro-brasileiros selecionados com respeito às raízes.">
-    <meta name="keywords" content="artigos religiosos, afro-brasileiro, candomblé, umbanda, terreiro, guias, velas, ervas">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- === TÍTULO PREMIUM & SEO === -->
+  <title>Ilê Asé Odara | Tradição, Fé e Ancestralidade Afro-Brasileira</title>
+  <meta name="description" content="Há mais de uma década, o Ilê Asé Odara preserva a cultura afro-brasileira com artigos sagrados selecionados: guias, velas, ervas, roupas cerimoniais e imagens. Axé em cada detalhe.">
+  <meta name="keywords" content="artigos religiosos afro-brasileiros, candomblé, umbanda, terreiro, guias de orixá, velas ritualísticas, ervas sagradas, roupas de santo, imagens de orixás, acessórios ritualísticos, Ilê Asé Odara">
+  <meta name="author" content="Ilê Asé Odara">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2C1810"> <!-- tom madeira/terroso sofisticado -->
+
+  <!-- === OPEN GRAPH / FACEBOOK === -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ilê Asé Odara – Tradição, Fé e Ancestralidade">
+  <meta property="og:description" content="Curadoria sagrada de artigos afro-brasileiros. Respeito às raízes e qualidade em cada detalhe.">
+  <meta property="og:url" content="https://www.ileaseodara.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Altar com elementos sagrados e roupas tradicionais afro-brasileiras">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Ilê Asé Odara">
+
+  <!-- === TWITTER CARDS === -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ilê Asé Odara – Tradição, Fé e Ancestralidade">
+  <meta name="twitter:description" content="Artigos sagrados selecionados com respeito às raízes afro-brasileiras. Conheça nossa loja física e curadoria.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=1200&auto=format&fit=crop&q=80">
+  <meta name="twitter:image:alt" content="Detalhe de roupas cerimoniais e guias de orixá">
+
+  <!-- === FAVICON COMPLETO (modo escuro/claro suportado) === -->
+  <link rel="icon" href="/favicon.ico" sizes="any"><!-- fallback -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%232C1810'%3E🕯️%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%232C1810'%3E🕯️%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="#">
+
+  <!-- === PRECONNECT / FONTES (otimizado) === -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Carregamento otimizado: apenas pesos realmente usados + swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+
+  <!-- === CSS (assumindo que style.css existe e é otimizado) === -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- === STRUCTURED DATA (JSON-LD) – Marca, LocalBusiness, Produtos === -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "@id": "https://www.ileaseodara.com",
+    "name": "Ilê Asé Odara",
+    "alternateName": "Ilê Asé Odara - Artigos Religiosos Afro-brasileiros",
+    "url": "https://www.ileaseodara.com",
+    "logo": "https://www.ileaseodara.com/logo-ile.png",
+    "image": "https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80",
+    "description": "Loja especializada em artigos sagrados afro-brasileiros: guias, velas, ervas, roupas cerimoniais e imagens. Tradição e respeito às raízes.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Flores, 123",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "01000-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.55,
+      "longitude": -46.65
+    },
+    "telephone": "+5511999999999",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ileaseodara",
+      "https://www.facebook.com/ileaseodara",
+      "https://wa.me/5511999999999"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Coleções Sagradas",
+      "itemListElement": [
+        {"@type": "Product", "name": "Roupas Tradicionais"},
+        {"@type": "Product", "name": "Guias e Colares"},
+        {"@type": "Product", "name": "Velas e Ervas"},
+        {"@type": "Product", "name": "Imagens Sagradas"},
+        {"@type": "Product", "name": "Perfumes Espirituais"},
+        {"@type": "Product", "name": "Acessórios Ritualísticos"}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-icon">✦</span>
-                <span class="logo-text">Ilê Asé Odara</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#manifesto" class="nav-link">Manifesto</a></li>
-                <li><a href="#colecoes" class="nav-link">Coleções</a></li>
-                <li><a href="#tradicao" class="nav-link">Tradição</a></li>
-                <li><a href="#galeria" class="nav-link">Galeria</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-            
-            <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span class="hamburger"></span>
-            </button>
-        </div>
+  <!-- SKIP LINK (acessibilidade) -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- === HEADER: NAVBAR SEMÂNTICA === -->
+  <header class="site-header">
+    <nav class="navbar" id="navbar" aria-label="Principal">
+      <div class="nav-container">
+        <a href="/" class="nav-logo" aria-label="Ilê Asé Odara - Página inicial">
+          <span class="logo-icon" aria-hidden="true">✦</span>
+          <span class="logo-text">Ilê Asé Odara</span>
+        </a>
+
+        <!-- menu desktop + mobile com aria -->
+        <ul class="nav-menu" id="navMenu" role="list">
+          <li role="listitem"><a href="#home" class="nav-link">Início</a></li>
+          <li role="listitem"><a href="#manifesto" class="nav-link">Manifesto</a></li>
+          <li role="listitem"><a href="#colecoes" class="nav-link">Coleções</a></li>
+          <li role="listitem"><a href="#tradicao" class="nav-link">Tradição</a></li>
+          <li role="listitem"><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li role="listitem"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>✦</span>
-                <span>Desde 2010</span>
-            </div>
-            
-            <h1 class="hero-title">
-                Tradição, Fé e<br>
-                Ancestralidade em<br>
-                <span class="highlight">Cada Detalhe</span>
-            </h1>
-            
-            <p class="hero-subtitle">
-                Respeito às raízes. Qualidade nos detalhes. Axé em cada escolha.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#colecoes" class="btn btn-primary">
-                    <span>Explorar Coleção</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ilê%20Asé%20Odara" class="btn btn-secondary" target="_blank">
-                    <span>Falar no WhatsApp</span>
-                </a>
-            </div>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="main-content">
+
+    <!-- === HERO SECTION === -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-particles" id="particles" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge" aria-hidden="true">
+          <span>✦</span>
+          <span>Desde 2010</span>
         </div>
-        
-        <div class="hero-scroll">
-            <span>Role para explorar</span>
-            <div class="scroll-line"></div>
+
+        <h1 id="hero-heading" class="hero-title">
+          Tradição, Fé e<br>
+          Ancestralidade em<br>
+          <span class="highlight">Cada Detalhe</span>
+        </h1>
+
+        <p class="hero-subtitle">Respeito às raízes. Qualidade nos detalhes. Axé em cada escolha.</p>
+
+        <div class="hero-buttons">
+          <a href="#colecoes" class="btn btn-primary" aria-label="Explorar coleção de artigos sagrados">
+            <span>Explorar Coleção</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ilê%20Asé%20Odara" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp (abre em nova janela)">
+            <span>Falar no WhatsApp</span>
+          </a>
         </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Role para explorar</span>
+        <div class="scroll-line"></div>
+      </div>
     </section>
 
-    <!-- Manifesto Section -->
-    <section class="manifesto" id="manifesto">
-        <div class="container">
-            <div class="manifesto-content">
-                <div class="manifesto-line"></div>
-                
-                <blockquote class="manifesto-text">
-                    "Não vendemos apenas produtos.<br>
-                    Compartilhamos tradição, cultura e<br>
-                    respeito às raízes."
-                </blockquote>
-                
-                <div class="manifesto-signature">
-                    <span>— Ilê Asé Odara</span>
-                </div>
-                
-                <div class="manifesto-line"></div>
-            </div>
+    <!-- === MANIFESTO SECTION (ARTICLE) === -->
+    <article class="manifesto" id="manifesto" aria-labelledby="manifesto-quote">
+      <div class="container">
+        <div class="manifesto-content">
+          <div class="manifesto-line" aria-hidden="true"></div>
+          <blockquote id="manifesto-quote" class="manifesto-text">
+            "Não vendemos apenas produtos.<br>
+            Compartilhamos tradição, cultura e<br>
+            respeito às raízes."
+          </blockquote>
+          <div class="manifesto-signature">
+            <cite>— Ilê Asé Odara</cite>
+          </div>
+          <div class="manifesto-line" aria-hidden="true"></div>
         </div>
+      </div>
+    </article>
+
+    <!-- === COLEÇÕES SECTION (lista de produtos) === -->
+    <section class="colecoes" id="colecoes" aria-labelledby="colecoes-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Nossas Coleções</span>
+          <h2 id="colecoes-heading" class="section-title">Categorias Selecionadas</h2>
+          <p class="section-desc">Cada item escolhido com zelo e respeito às tradições ancestrais</p>
+        </header>
+
+        <div class="colecoes-grid" role="list">
+          <!-- Card 1 -->
+          <article class="colecao-card" data-product="Roupas Tradicionais" role="listitem">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Vestimentas brancas cerimoniais com detalhes em renda, usadas em rituais de candomblé e umbanda" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Roupas Tradicionais')" aria-label="Consultar disponibilidade de Roupas Tradicionais via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Roupas Tradicionais</h3>
+              <p>Vestimentas cerimoniais, roupas de santo e acessórios tradicionais confeccionados com tecidos nobres e respeito aos rituais.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="colecao-card" data-product="Guias e Colares" role="listitem">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&auto=format&fit=crop&q=80" alt="Guias e colares de contas coloridas nas cores dos orixás, dispostas sobre tecido sagrado" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Guias e Colares')" aria-label="Consultar disponibilidade de Guias e Colares via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Guias e Colares</h3>
+              <p>Contas sagradas, guias de orixás e colares ritualísticos elaborados segundo as tradições e energias de cada santo.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="colecao-card" data-product="Velas e Ervas" role="listitem">
+            <div class="card-image">
+              <img src="https://img.elo7.com.br/product/zoom/2FCF97E/velas-artesanais-com-ervas.jpg" alt="Velas artesanais e feixes de ervas secas usadas em defumações e oferendas" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Velas e Ervas')" aria-label="Consultar disponibilidade de Velas e Ervas via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Velas e Ervas</h3>
+              <p>Velas ritualísticas, ervas sagradas, defumadores e incensos selecionados para limpeza, oferendas e trabalhos espirituais.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="colecao-card" data-product="Imagens Sagradas" role="listitem">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&auto=format&fit=crop&q=80" alt="Estátuas de orixás esculpidas em madeira e pedra, representando divindades afro-brasileiras" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Imagens Sagradas')" aria-label="Consultar disponibilidade de Imagens Sagradas via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Imagens Sagradas</h3>
+              <p>Estátuas, quadros e representações dos orixás, guias e entidades para altares e espaços de devoção.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="colecao-card" data-product="Perfumes Espirituais" role="listitem">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&auto=format&fit=crop&q=80" alt="Frascos de vidro com essências e perfumes naturais para banhos e energização" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Perfumes Espirituais')" aria-label="Consultar disponibilidade de Perfumes Espirituais via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Perfumes Espirituais</h3>
+              <p>Essências, perfumes e águas de colônia específicas para cada orixá, trabalhos espirituais e harmonização pessoal.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="colecao-card" data-product="Acessórios Ritualísticos" role="listitem">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80" alt="Objetos rituais como sinos, otás, ferramentas de orixás sobre tecido branco" loading="lazy">
+              <div class="card-overlay">
+                <button class="card-btn" onclick="openWhatsApp('Acessórios Ritualísticos')" aria-label="Consultar disponibilidade de Acessórios Ritualísticos via WhatsApp">
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Acessórios Ritualísticos</h3>
+              <p>Ferramentas, objetos de altar, oferendas preparadas e itens específicos para rituais e cerimônias.</p>
+              <span class="card-link" aria-hidden="true">Ver produtos →</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Coleções Section -->
-    <section class="colecoes" id="colecoes">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Nossas Coleções</span>
-                <h2 class="section-title">Categorias Selecionadas</h2>
-                <p class="section-desc">Cada item escolhido com zelo e respeito às tradições ancestrais</p>
+    <!-- === TRADIÇÃO SECTION === -->
+    <section class="tradicao" id="tradicao" aria-labelledby="tradicao-heading">
+      <div class="container">
+        <div class="tradicao-grid">
+          <figure class="tradicao-image">
+            <div class="image-frame">
+              <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&auto=format&fit=crop&q=80" alt="Mãos de uma anciã segurando fios de contas sagradas, transmitindo sabedoria ancestral" loading="lazy">
+              <div class="frame-corner top-left" aria-hidden="true"></div>
+              <div class="frame-corner top-right" aria-hidden="true"></div>
+              <div class="frame-corner bottom-left" aria-hidden="true"></div>
+              <div class="frame-corner bottom-right" aria-hidden="true"></div>
             </div>
-            
-            <div class="colecoes-grid">
-                <!-- Card 1 -->
-                <article class="colecao-card" data-product="Roupas Tradicionais">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Roupas Tradicionais">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Roupas Tradicionais')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Roupas Tradicionais</h3>
-                        <p>Vestimentas cerimoniais, roupas de santo e acessórios tradicionais confeccionados com tecidos nobres e respeito aos rituais.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
+            <figcaption class="visually-hidden">Representação da transmissão de conhecimento tradicional</figcaption>
+          </figure>
 
-                <!-- Card 2 -->
-                <article class="colecao-card" data-product="Guias e Colares">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&auto=format&fit=crop&q=80" alt="Guias e Colares">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Guias e Colares')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Guias e Colares</h3>
-                        <p>Contas sagradas, guias de orixás e colares ritualísticos elaborados segundo as tradições e energias de cada santo.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
+          <div class="tradicao-content">
+            <span class="section-label">Nossa Essência</span>
+            <h2 id="tradicao-heading" class="section-title">Respeito à Tradição,<br>Excelência no Serviço</h2>
 
-                <!-- Card 3 -->
-                <article class="colecao-card" data-product="Velas e Ervas">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1602607688737-cef3c33bd608?w=800&auto=format&fit=crop&q=80" alt="Velas e Ervas">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Velas e Ervas')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Velas e Ervas</h3>
-                        <p>Velas ritualísticas, ervas sagradas, defumadores e insensos selecionados para limpeza, oferendas e trabalhos espirituais.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="colecao-card" data-product="Imagens Sagradas">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&auto=format&fit=crop&q=80" alt="Imagens Sagradas">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Imagens Sagradas')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Imagens Sagradas</h3>
-                        <p>Estátuas, quadros e representações dos orixás, guias e entidades para altares e espaços de devoção.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
-
-                <!-- Card 5 -->
-                <article class="colecao-card" data-product="Perfumes Espirituais">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&auto=format&fit=crop&q=80" alt="Perfumes Espirituais">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Perfumes Espirituais')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Perfumes Espirituais</h3>
-                        <p>Essências, perfumes e águas de colônia específicas para cada orixá, trabalhos espirituais e harmonização pessoal.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
-
-                <!-- Card 6 -->
-                <article class="colecao-card" data-product="Acessórios Ritualísticos">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80" alt="Acessórios Ritualísticos">
-                        <div class="card-overlay">
-                            <button class="card-btn" onclick="openWhatsApp('Acessórios Ritualísticos')">
-                                Consultar Disponibilidade
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Acessórios Ritualísticos</h3>
-                        <p>Ferramentas, objetos de altar, oferendas preparadas e itens específicos para rituais e cerimônias.</p>
-                        <span class="card-link">Ver produtos →</span>
-                    </div>
-                </article>
+            <div class="tradicao-text">
+              <p>Há mais de uma década, o Ilê Asé Odara dedica-se a preservar e disseminar a riqueza da cultura afro-brasileira através de produtos selecionados que respeitam a ancestralidade e a espiritualidade de cada tradição.</p>
+              <p>Cada item em nossa coleção é escolhido não apenas pela qualidade, mas pelo significado sagrado que carrega. Trabalhamos com artesãos, terreiros e fornecedores que compreendem a importância espiritual de cada peça.</p>
+              <p>Nossa missão é ser ponte entre o sagrado e o cotidiano, oferecendo não apenas produtos, mas conhecimento, respeito e autenticidade em cada interação.</p>
             </div>
+
+            <div class="tradicao-stats" role="list">
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">14+</span>
+                <span class="stat-label">Anos de Tradição</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Produtos Selecionados</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Clientes Atendidos</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Tradição Section -->
-    <section class="tradicao" id="tradicao">
-        <div class="container">
-            <div class="tradicao-grid">
-                <div class="tradicao-image">
-                    <div class="image-frame">
-                        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&auto=format&fit=crop&q=80" alt="Tradição Ancestral">
-                        <div class="frame-corner top-left"></div>
-                        <div class="frame-corner top-right"></div>
-                        <div class="frame-corner bottom-left"></div>
-                        <div class="frame-corner bottom-right"></div>
-                    </div>
-                </div>
-                
-                <div class="tradicao-content">
-                    <span class="section-label">Nossa Essência</span>
-                    <h2 class="section-title">Respeito à Tradição,<br>Excelência no Serviço</h2>
-                    
-                    <div class="tradicao-text">
-                        <p>
-                            Há mais de uma década, o Ilê Asé Odara dedica-se a preservar e disseminar a riqueza da cultura afro-brasileira através de produtos selecionados que respeitam a ancestralidade e a espiritualidade de cada tradição.
-                        </p>
-                        <p>
-                            Cada item em nossa coleção é escolhido não apenas pela qualidade, mas pelo significado sagrado que carrega. Trabalhamos com artesãos, terreiros e fornecedores que compreendem a importância espiritual de cada peça.
-                        </p>
-                        <p>
-                            Nossa missão é ser ponte entre o sagrado e o cotidiano, oferecendo não apenas produtos, mas conhecimento, respeito e autenticidade em cada interação.
-                        </p>
-                    </div>
-                    
-                    <div class="tradicao-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">14+</span>
-                            <span class="stat-label">Anos de Tradição</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Produtos Selecionados</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">1000+</span>
-                            <span class="stat-label">Clientes Atendidos</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- === DIFERENCIAIS (usando <ul> semântico) === -->
+    <section class="diferenciais" aria-labelledby="diferenciais-heading">
+      <div class="container">
+        <h2 id="diferenciais-heading" class="visually-hidden">Nossos Diferenciais</h2>
+        <ul class="diferenciais-grid" role="list">
+          <li class="diferencial-item" role="listitem">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
-        </div>
+            <h3>Atendimento Personalizado</h3>
+            <p>Orientação especializada para encontrar exatamente o que você precisa para seu caminho espiritual.</p>
+          </li>
+
+          <li class="diferencial-item" role="listitem">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3>Produtos Selecionados</h3>
+            <p>Curadoria rigorosa de itens que respeitam as tradições e possuem qualidade comprovada.</p>
+          </li>
+
+          <li class="diferencial-item" role="listitem">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Respeito à Tradição</h3>
+            <p>Compromisso absoluto com a preservação e valorização da cultura afro-brasileira.</p>
+          </li>
+
+          <li class="diferencial-item" role="listitem">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Localização Física</h3>
+            <p>Loja física acolhedora onde você pode conhecer nossos produtos e receber orientação presencial.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Diferenciais Section -->
-    <section class="diferenciais">
-        <div class="container">
-            <div class="diferenciais-grid">
-                <div class="diferencial-item">
-                    <div class="diferencial-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <h3>Atendimento Personalizado</h3>
-                    <p>Orientação especializada para encontrar exatamente o que você precisa para seu caminho espiritual.</p>
-                </div>
+    <!-- === GALERIA === -->
+    <section class="galeria" id="galeria" aria-labelledby="galeria-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Galeria</span>
+          <h2 id="galeria-heading" class="section-title">Nosso Universo</h2>
+          <p class="section-desc">Um olhar sobre a beleza e o significado de cada peça</p>
+        </header>
 
-                <div class="diferencial-item">
-                    <div class="diferencial-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                    <h3>Produtos Selecionados</h3>
-                    <p>Curadoria rigorosa de itens que respeitam as tradições e possuem qualidade comprovada.</p>
-                </div>
+        <div class="galeria-grid" role="list">
+          <figure class="galeria-item large" role="listitem">
+            <img src="https://images.unsplash.com/photo-1602607688737-cef3c33bd608?w=800&auto=format&fit=crop&q=80" alt="Vela ritualística acesa ao lado de folhas de arruda e pemba" loading="lazy">
+            <figcaption class="galeria-overlay"><span class="galeria-title">Velas de Oferenda</span></figcaption>
+          </figure>
 
-                <div class="diferencial-item">
-                    <div class="diferencial-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Respeito à Tradição</h3>
-                    <p>Compromisso absoluto com a preservação e valorização da cultura afro-brasileira.</p>
-                </div>
+          <figure class="galeria-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&auto=format&fit=crop&q=80" alt="Feixes de ervas sagradas como alecrim, guiné e arruda" loading="lazy">
+            <figcaption class="galeria-overlay"><span class="galeria-title">Ervas Sagradas</span></figcaption>
+          </figure>
 
-                <div class="diferencial-item">
-                    <div class="diferencial-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Localização Física</h3>
-                    <p>Loja física acolhedora onde você pode conhecer nossos produtos e receber orientação presencial.</p>
-                </div>
-            </div>
+          <figure class="galeria-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&auto=format&fit=crop&q=80" alt="Frascos de essências com rótulos artesanais" loading="lazy">
+            <figcaption class="galeria-overlay"><span class="galeria-title">Essências</span></figcaption>
+          </figure>
+
+          <figure class="galeria-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&auto=format&fit=crop&q=80" alt="Fio de contas coloridas, guia de orixá, em primeiro plano" loading="lazy">
+            <figcaption class="galeria-overlay"><span class="galeria-title">Contas Sagradas</span></figcaption>
+          </figure>
+
+          <figure class="galeria-item large" role="listitem">
+            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Vestimentas brancas tradicionais estendidas em vara, com rendas e bordados" loading="lazy">
+            <figcaption class="galeria-overlay"><span class="galeria-title">Vestimentas Cerimoniais</span></figcaption>
+          </figure>
         </div>
+      </div>
     </section>
 
-    <!-- Galeria Section -->
-    <section class="galeria" id="galeria">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Galeria</span>
-                <h2 class="section-title">Nosso Universo</h2>
-                <p class="section-desc">Um olhar sobre a beleza e o significado de cada peça</p>
-            </div>
-            
-            <div class="galeria-grid">
-                <div class="galeria-item large">
-                    <img src="https://images.unsplash.com/photo-1602607688737-cef3c33bd608?w=800&auto=format&fit=crop&q=80" alt="Vela Ritualística">
-                    <div class="galeria-overlay">
-                        <span class="galeria-title">Velas de Oferenda</span>
-                    </div>
+    <!-- === CONTATO (COM ADDRESS) === -->
+    <section class="contato" id="contato" aria-labelledby="contato-heading">
+      <div class="container">
+        <div class="contato-grid">
+          <div class="contato-info">
+            <span class="section-label">Visite-nos</span>
+            <h2 id="contato-heading" class="section-title">Estamos Aqui<br>Para Atender</h2>
+
+            <address class="info-list">
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <div class="info-content">
+                  <h4>Endereço</h4>
+                  <p>Rua das Flores, 123 - Centro<br>São Paulo - SP, 01000-000</p>
                 </div>
-                
-                <div class="galeria-item">
-                    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&auto=format&fit=crop&q=80" alt="Ervas Sagradas">
-                    <div class="galeria-overlay">
-                        <span class="galeria-title">Ervas Sagradas</span>
-                    </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+                <div class="info-content">
+                  <h4>Horário de Funcionamento</h4>
+                  <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
                 </div>
-                
-                <div class="galeria-item">
-                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&auto=format&fit=crop&q=80" alt="Essências">
-                    <div class="galeria-overlay">
-                        <span class="galeria-title">Essências</span>
-                    </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+                <div class="info-content">
+                  <h4>Telefone</h4>
+                  <p><a href="tel:+5511999999999">(11) 99999-9999</a><br><a href="tel:+551133333333">(11) 3333-3333</a></p>
                 </div>
-                
-                <div class="galeria-item">
-                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&auto=format&fit=crop&q=80" alt="Contas">
-                    <div class="galeria-overlay">
-                        <span class="galeria-title">Contas Sagradas</span>
-                    </div>
-                </div>
-                
-                <div class="galeria-item large">
-                    <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Vestimenta">
-                    <div class="galeria-overlay">
-                        <span class="galeria-title">Vestimentas Cerimoniais</span>
-                    </div>
-                </div>
-            </div>
+              </div>
+            </address>
+
+            <a href="https://wa.me/5511999999999" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp (abre nova janela)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>Atendimento via WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contato-map">
+            <iframe 
+              title="Mapa de localização da loja Ilê Asé Odara no centro de São Paulo"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.65!3d-23.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAwLjAiUyA0NsKwMzknMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Contato Section -->
-    <section class="contato" id="contato">
-        <div class="container">
-            <div class="contato-grid">
-                <div class="contato-info">
-                    <span class="section-label">Visite-nos</span>
-                    <h2 class="section-title">Estamos Aqui<br>Para Atender</h2>
-                    
-                    <div class="info-list">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Endereço</h4>
-                                <p>Rua das Flores, 123 - Centro<br>São Paulo - SP, 01000-000</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Horário de Funcionamento</h4>
-                                <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Telefone</h4>
-                                <p>(11) 99999-9999<br>(11) 3333-3333</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="https://wa.me/5511999999999" class="btn btn-primary btn-large" target="_blank">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        <span>Atendimento via WhatsApp</span>
-                    </a>
-                </div>
-                
-                <div class="contato-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.65!3d-23.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAwLjAiUyA0NsKwMzknMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon" aria-hidden="true">✦</span>
+            <span class="logo-text">Ilê Asé Odara</span>
+          </div>
+          <p class="footer-tagline">Tradição, Fé e Ancestralidade desde 2010</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span class="logo-icon">✦</span>
-                        <span class="logo-text">Ilê Asé Odara</span>
-                    </div>
-                    <p class="footer-tagline">Tradição, Fé e Ancestralidade desde 2010</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Navegação</h4>
-                        <ul>
-                            <li><a href="#home">Início</a></li>
-                            <li><a href="#manifesto">Manifesto</a></li>
-                            <li><a href="#colecoes">Coleções</a></li>
-                            <li><a href="#tradicao">Tradição</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h4>Coleções</h4>
-                        <ul>
-                            <li><a href="#colecoes">Roupas Tradicionais</a></li>
-                            <li><a href="#colecoes">Guias e Colares</a></li>
-                            <li><a href="#colecoes">Velas e Ervas</a></li>
-                            <li><a href="#colecoes">Imagens Sagradas</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h4>Contato</h4>
-                        <ul>
-                            <li>Rua das Flores, 123</li>
-                            <li>São Paulo - SP</li>
-                            <li>(11) 99999-9999</li>
-                            <li>contato@ileaseodara.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-line"></div>
-                <div class="footer-credits">
-                    <p>&copy; 2024 Ilê Asé Odara. Todos os direitos reservados.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-links">
+          <nav class="footer-col" aria-labelledby="footer-nav-heading">
+            <h4 id="footer-nav-heading">Navegação</h4>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#manifesto">Manifesto</a></li>
+              <li><a href="#colecoes">Coleções</a></li>
+              <li><a href="#tradicao">Tradição</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-col" aria-labelledby="footer-collections-heading">
+            <h4 id="footer-collections-heading">Coleções</h4>
+            <ul>
+              <li><a href="#colecoes">Roupas Tradicionais</a></li>
+              <li><a href="#colecoes">Guias e Colares</a></li>
+              <li><a href="#colecoes">Velas e Ervas</a></li>
+              <li><a href="#colecoes">Imagens Sagradas</a></li>
+            </ul>
+          </div>
+
+          <address class="footer-col" aria-labelledby="footer-contact-heading">
+            <h4 id="footer-contact-heading">Contato</h4>
+            <ul>
+              <li>Rua das Flores, 123</li>
+              <li>São Paulo - SP</li>
+              <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+              <li><a href="mailto:contato@ileaseodara.com">contato@ileaseodara.com</a></li>
+            </ul>
+          </address>
         </div>
-    </footer>
+      </div>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-    </a>
+      <div class="footer-bottom">
+        <div class="footer-line" aria-hidden="true"></div>
+        <div class="footer-credits">
+          <p>&copy; 2024 Ilê Asé Odara. Todos os direitos reservados.</p>
+          <ul class="footer-social" aria-label="Redes sociais">
+            <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a></li>
+            <li><a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a></li>
+            <li><a href="#" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="main.js"></script>
+  <!-- WHATSAPP FLOAT (link direto) -->
+  <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contato rápido via WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- script principal com defer para não bloquear render -->
+  <script src="/main.js" defer></script>
+
+  <!-- micro-interação: se houver função openWhatsApp, garantir que exista (exemplo mínimo) -->
+  <script>
+    // fallback para botões de overlay - apenas se não existir no main.js
+    window.openWhatsApp = window.openWhatsApp || function(categoria) {
+      const numero = '5511999999999';
+      const texto = `Olá, gostaria de saber mais sobre a categoria: ${categoria}`;
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener,noreferrer');
+    };
+  </script>
 </body>
 </html>

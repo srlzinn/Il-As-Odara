@@ -1,29 +1,26 @@
 /* ============================================
-   ILÊ ASÉ ODARA - ESTILOS PREMIUM
+   ILÊ ASÉ ODARA - ESTILOS PREMIUM (AZUL DOMINANTE)
    ============================================ */
 
-/* Variáveis CSS */
+/* Variáveis CSS - NOVA PALETA */
 :root {
-    /* Cores Principais */
-    --color-black: #0B0B0B;
-    --color-gold: #B89B5E;
-    --color-gold-light: #D4B896;
-    --color-gold-dark: #8B7355;
-    --color-green: #0F2F1E;
-    --color-red: #5C0F0F;
-    --color-cream: #F1ECE3;
-    --color-white: #FFFFFF;
+    /* Cores Principais - AZUL DOMINANTE */
+    --color-primary-dark: #1F3F73;    /* Azul escuro - fundo principal */
+    --color-primary: #2E6DB4;          /* Azul médio - elementos secundários */
+    --color-gold: #D4A837;             /* Dourado elegante - detalhes */
+    --color-white: #FFFFFF;             /* Branco - textos e botões */
     
-    /* Cores de Apoio */
-    --color-gray-dark: #1A1A1A;
-    --color-gray-medium: #2A2A2A;
-    --color-gray-light: #888888;
+    /* Cores de Apoio (ajustadas para nova paleta) */
+    --color-gray-dark: #132A4A;         /* Azul mais escuro para gradientes */
+    --color-gray-medium: #1E3A5F;       /* Azul médio-escuro para cards */
+    --color-gray-light: #B8C7DE;        /* Azul acinzentado claro para textos secundários */
+    --color-black: #0A1A2F;              /* Quase preto com tom azulado */
     
-    /* Tipografia */
+    /* Mantendo variáveis de tipografia */
     --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     
-    /* Espaçamento */
+    /* Espaçamento (preservado) */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
@@ -31,18 +28,18 @@
     --space-xl: 6rem;
     --space-2xl: 8rem;
     
-    /* Transições */
+    /* Transições (preservadas) */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Sombras */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
-    --shadow-gold: 0 0 40px rgba(184, 155, 94, 0.15);
+    /* Sombras - ajustadas para nova paleta */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-gold: 0 0 40px rgba(212, 168, 55, 0.2); /* Dourado suave */
     
     /* Bordas */
-    --border-gold: 1px solid rgba(184, 155, 94, 0.3);
+    --border-gold: 1px solid rgba(212, 168, 55, 0.3); /* Dourado mais suave */
     --border-gold-thick: 2px solid var(--color-gold);
 }
 
@@ -62,8 +59,8 @@ html {
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--color-black);
-    color: var(--color-cream);
+    background-color: var(--color-primary-dark); /* Fundo azul dominante */
+    color: var(--color-white);
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -73,7 +70,7 @@ body {
 /* Seleção de Texto */
 ::selection {
     background-color: var(--color-gold);
-    color: var(--color-black);
+    color: var(--color-primary-dark);
 }
 
 /* Scrollbar Personalizada */
@@ -82,12 +79,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-black);
+    background: var(--color-primary-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-gold-dark);
+    background: var(--color-gold);
     border-radius: 4px;
+    opacity: 0.7;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -103,6 +101,40 @@ body {
 }
 
 /* ============================================
+   ACESSIBILIDADE - SKIP LINK
+   ============================================ */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-gold);
+    color: var(--color-primary-dark);
+    padding: 0.5rem 1rem;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ============================================
    TIPOGRAFIA
    ============================================ */
 
@@ -113,7 +145,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado para labels */
     margin-bottom: var(--space-sm);
     position: relative;
     padding-left: 3rem;
@@ -127,7 +159,7 @@ body {
     transform: translateY(-50%);
     width: 2rem;
     height: 1px;
-    background: var(--color-gold);
+    background: var(--color-gold); /* Dourado */
 }
 
 .section-title {
@@ -135,19 +167,19 @@ body {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 300;
     line-height: 1.2;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco para títulos */
     margin-bottom: var(--space-sm);
 }
 
 .section-desc {
     font-size: 1.1rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     max-width: 600px;
     font-weight: 300;
 }
 
 /* ============================================
-   BOTÕES
+   BOTÕES - NOVO DESIGN
    ============================================ */
 
 .btn {
@@ -170,9 +202,10 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
-    color: var(--color-black);
+    background: var(--color-white); /* Fundo branco */
+    color: var(--color-primary-dark); /* Texto azul escuro */
     border-radius: 2px;
+    border: 1px solid var(--color-gold); /* Borda dourada */
 }
 
 .btn-primary::before {
@@ -182,13 +215,15 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(212, 168, 55, 0.2), transparent); /* Brilho dourado suave */
     transition: left 0.6s;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(184, 155, 94, 0.3);
+    box-shadow: 0 10px 30px rgba(212, 168, 55, 0.25); /* Sombra dourada */
+    background: var(--color-white);
+    border-color: var(--color-gold);
 }
 
 .btn-primary:hover::before {
@@ -197,15 +232,16 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--color-cream);
-    border: 1px solid var(--color-gold);
+    color: var(--color-white); /* Texto branco */
+    border: 1px solid var(--color-gold); /* Borda dourada */
     border-radius: 2px;
 }
 
 .btn-secondary:hover {
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-gold); /* Fundo dourado no hover */
+    color: var(--color-primary-dark); /* Texto azul escuro */
     transform: translateY(-2px);
+    border-color: var(--color-gold);
 }
 
 .btn-large {
@@ -214,26 +250,30 @@ body {
 }
 
 /* ============================================
-   NAVBAR
+   HEADER E NAVBAR
    ============================================ */
 
-.navbar {
+.site-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
     padding: 1.5rem 0;
     transition: all var(--transition-normal);
     background: transparent;
 }
 
 .navbar.scrolled {
-    background: rgba(11, 11, 11, 0.9);
+    background: rgba(31, 63, 115, 0.9); /* Azul escuro com transparência */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 1rem 0;
-    border-bottom: var(--border-gold);
+    border-bottom: 1px solid rgba(212, 168, 55, 0.3); /* Borda dourada suave */
 }
 
 .nav-container {
@@ -250,7 +290,7 @@ body {
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
-    color: var(--color-cream);
+    color: var(--color-white); /* Logo branca */
     transition: opacity var(--transition-fast);
 }
 
@@ -260,7 +300,7 @@ body {
 
 .logo-icon {
     font-size: 1.5rem;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Ícone dourado */
 }
 
 .logo-text {
@@ -281,7 +321,7 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--color-cream);
+    color: var(--color-white); /* Links brancos */
     text-decoration: none;
     position: relative;
     padding: 0.5rem 0;
@@ -295,12 +335,12 @@ body {
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--color-gold);
+    background: var(--color-gold); /* Linha dourada no hover */
     transition: width var(--transition-normal);
 }
 
 .nav-link:hover {
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado no hover */
 }
 
 .nav-link:hover::after {
@@ -321,7 +361,7 @@ body {
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--color-cream);
+    background: var(--color-white); /* Hamburger branco */
     position: relative;
     transition: background var(--transition-fast);
 }
@@ -332,7 +372,7 @@ body {
     position: absolute;
     width: 24px;
     height: 2px;
-    background: var(--color-cream);
+    background: var(--color-white); /* Hamburger branco */
     transition: all var(--transition-fast);
 }
 
@@ -351,15 +391,17 @@ body {
 .nav-toggle.active .hamburger::before {
     top: 0;
     transform: rotate(45deg);
+    background: var(--color-gold); /* Dourado quando ativo */
 }
 
 .nav-toggle.active .hamburger::after {
     top: 0;
     transform: rotate(-45deg);
+    background: var(--color-gold); /* Dourado quando ativo */
 }
 
 /* ============================================
-   HERO SECTION
+   HERO SECTION - AJUSTADO PARA AZUL
    ============================================ */
 
 .hero {
@@ -371,9 +413,9 @@ body {
     justify-content: center;
     overflow: hidden;
     background: 
-        radial-gradient(ellipse at top, rgba(184, 155, 94, 0.1) 0%, transparent 50%),
-        radial-gradient(ellipse at bottom, rgba(15, 47, 30, 0.3) 0%, transparent 50%),
-        var(--color-black);
+        radial-gradient(ellipse at top, rgba(212, 168, 55, 0.15) 0%, transparent 60%), /* Brilho dourado */
+        radial-gradient(ellipse at bottom, rgba(46, 109, 180, 0.3) 0%, transparent 60%), /* Azul médio */
+        var(--color-primary-dark); /* Fundo azul escuro */
 }
 
 .hero-particles {
@@ -390,7 +432,7 @@ body {
     position: absolute;
     width: 3px;
     height: 3px;
-    background: var(--color-gold);
+    background: var(--color-gold); /* Partículas douradas */
     border-radius: 50%;
     opacity: 0.3;
     animation: float 20s infinite linear;
@@ -420,7 +462,7 @@ body {
     width: 100%;
     height: 100%;
     background: 
-        linear-gradient(to bottom, rgba(11, 11, 11, 0.3) 0%, rgba(11, 11, 11, 0.6) 100%),
+        linear-gradient(to bottom, rgba(31, 63, 115, 0.2) 0%, rgba(31, 63, 115, 0.4) 100%),
         url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     opacity: 0.03;
     z-index: 2;
@@ -454,12 +496,12 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado */
     margin-bottom: var(--space-md);
     padding: 0.75rem 1.5rem;
-    border: var(--border-gold);
+    border: 1px solid rgba(212, 168, 55, 0.3); /* Borda dourada suave */
     border-radius: 100px;
-    background: rgba(184, 155, 94, 0.05);
+    background: rgba(31, 63, 115, 0.3); /* Fundo azul translúcido */
     backdrop-filter: blur(10px);
 }
 
@@ -468,13 +510,13 @@ body {
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 300;
     line-height: 1.1;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     margin-bottom: var(--space-md);
     letter-spacing: -0.02em;
 }
 
 .hero-title .highlight {
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado para destaque */
     font-style: italic;
     position: relative;
     display: inline-block;
@@ -493,7 +535,7 @@ body {
 .hero-subtitle {
     font-size: 1.25rem;
     font-weight: 300;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     margin-bottom: var(--space-lg);
     max-width: 600px;
     margin-left: auto;
@@ -539,7 +581,7 @@ body {
 .scroll-line {
     width: 1px;
     height: 60px;
-    background: linear-gradient(to bottom, var(--color-gold), transparent);
+    background: linear-gradient(to bottom, var(--color-gold), transparent); /* Dourado */
 }
 
 /* ============================================
@@ -548,7 +590,7 @@ body {
 
 .manifesto {
     padding: var(--space-2xl) 0;
-    background: var(--color-black);
+    background: var(--color-primary-dark); /* Azul escuro */
     position: relative;
 }
 
@@ -583,7 +625,7 @@ body {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 300;
     line-height: 1.6;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     margin: var(--space-lg) 0;
     font-style: italic;
 }
@@ -591,7 +633,7 @@ body {
 .manifesto-signature {
     font-family: var(--font-sans);
     font-size: 0.9rem;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado */
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-bottom: var(--space-lg);
@@ -603,7 +645,7 @@ body {
 
 .colecoes {
     padding: var(--space-2xl) 0;
-    background: linear-gradient(to bottom, var(--color-black), var(--color-gray-dark));
+    background: linear-gradient(to bottom, var(--color-primary-dark), var(--color-gray-dark));
 }
 
 .section-header {
@@ -618,8 +660,8 @@ body {
 }
 
 .colecao-card {
-    background: var(--color-gray-medium);
-    border: var(--border-gold);
+    background: var(--color-gray-medium); /* Azul médio-escuro */
+    border: var(--border-gold); /* Borda dourada suave */
     border-radius: 4px;
     overflow: hidden;
     transition: all var(--transition-normal);
@@ -633,7 +675,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(184, 155, 94, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(212, 168, 55, 0.1) 0%, transparent 50%); /* Brilho dourado */
     opacity: 0;
     transition: opacity var(--transition-normal);
     z-index: 1;
@@ -642,8 +684,8 @@ body {
 
 .colecao-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-gold);
-    border-color: var(--color-gold);
+    box-shadow: var(--shadow-gold); /* Sombra dourada */
+    border-color: var(--color-gold); /* Borda dourada mais intensa */
 }
 
 .colecao-card:hover::before {
@@ -673,7 +715,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(11, 11, 11, 0.8);
+    background: rgba(31, 63, 115, 0.85); /* Azul escuro translúcido */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -687,8 +729,8 @@ body {
 
 .card-btn {
     padding: 1rem 2rem;
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-gold); /* Dourado */
+    color: var(--color-primary-dark); /* Texto azul escuro */
     border: none;
     font-family: var(--font-sans);
     font-size: 0.8rem;
@@ -698,6 +740,7 @@ body {
     cursor: pointer;
     transform: translateY(20px);
     transition: all var(--transition-normal);
+    border: 1px solid var(--color-gold);
 }
 
 .colecao-card:hover .card-btn {
@@ -705,7 +748,9 @@ body {
 }
 
 .card-btn:hover {
-    background: var(--color-gold-light);
+    background: var(--color-white); /* Branco no hover */
+    color: var(--color-primary-dark);
+    border-color: var(--color-gold);
     transform: scale(1.05);
 }
 
@@ -719,13 +764,13 @@ body {
     font-family: var(--font-serif);
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     margin-bottom: var(--space-xs);
 }
 
 .card-content p {
     font-size: 0.95rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     line-height: 1.7;
     margin-bottom: var(--space-sm);
 }
@@ -735,12 +780,12 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado */
     transition: color var(--transition-fast);
 }
 
 .colecao-card:hover .card-link {
-    color: var(--color-gold-light);
+    color: var(--color-white); /* Branco no hover */
 }
 
 /* ============================================
@@ -749,7 +794,7 @@ body {
 
 .tradicao {
     padding: var(--space-2xl) 0;
-    background: var(--color-black);
+    background: var(--color-primary-dark); /* Azul escuro */
     position: relative;
     overflow: hidden;
 }
@@ -761,7 +806,7 @@ body {
     right: -20%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(184, 155, 94, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(212, 168, 55, 0.05) 0%, transparent 70%); /* Brilho dourado */
     pointer-events: none;
 }
 
@@ -787,17 +832,19 @@ body {
     border-radius: 4px;
     filter: grayscale(20%) contrast(1.1);
     transition: filter var(--transition-normal);
+    border: 1px solid rgba(212, 168, 55, 0.2); /* Borda dourada suave */
 }
 
 .image-frame:hover img {
     filter: grayscale(0%) contrast(1);
+    border-color: var(--color-gold);
 }
 
 .frame-corner {
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 2px solid var(--color-gold);
+    border: 2px solid var(--color-gold); /* Dourado */
     transition: all var(--transition-normal);
 }
 
@@ -832,7 +879,7 @@ body {
 .image-frame:hover .frame-corner {
     width: 60px;
     height: 60px;
-    border-color: var(--color-gold-light);
+    border-color: var(--color-white); /* Branco no hover */
 }
 
 .tradicao-content {
@@ -845,7 +892,7 @@ body {
 
 .tradicao-text p {
     font-size: 1.05rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     line-height: 1.9;
     margin-bottom: var(--space-sm);
 }
@@ -855,7 +902,7 @@ body {
     gap: var(--space-lg);
     margin-top: var(--space-lg);
     padding-top: var(--space-lg);
-    border-top: var(--border-gold);
+    border-top: var(--border-gold); /* Borda dourada */
 }
 
 .stat-item {
@@ -867,13 +914,13 @@ body {
     font-family: var(--font-serif);
     font-size: 3rem;
     font-weight: 300;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado */
     line-height: 1;
 }
 
 .stat-label {
     font-size: 0.8rem;
-    color: var(--color-gray-light);
+    color: var(--color-white); /* Branco */
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-top: 0.5rem;
@@ -886,26 +933,27 @@ body {
 
 .diferenciais {
     padding: var(--space-2xl) 0;
-    background: linear-gradient(to bottom, var(--color-gray-dark), var(--color-black));
+    background: linear-gradient(to bottom, var(--color-gray-dark), var(--color-primary-dark));
 }
 
 .diferenciais-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-md);
+    list-style: none;
 }
 
 .diferencial-item {
     text-align: center;
     padding: var(--space-lg) var(--space-md);
-    background: rgba(184, 155, 94, 0.03);
-    border: var(--border-gold);
+    background: rgba(212, 168, 55, 0.03); /* Dourado muito suave */
+    border: var(--border-gold); /* Borda dourada */
     border-radius: 4px;
     transition: all var(--transition-normal);
 }
 
 .diferencial-item:hover {
-    background: rgba(184, 155, 94, 0.08);
+    background: rgba(212, 168, 55, 0.08); /* Dourado mais intenso no hover */
     transform: translateY(-5px);
     box-shadow: var(--shadow-gold);
 }
@@ -917,15 +965,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-gold);
-    border: 1px solid rgba(184, 155, 94, 0.3);
+    color: var(--color-gold); /* Dourado */
+    border: 1px solid rgba(212, 168, 55, 0.3); /* Borda dourada suave */
     border-radius: 50%;
     transition: all var(--transition-normal);
 }
 
 .diferencial-item:hover .diferencial-icon {
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-gold); /* Fundo dourado no hover */
+    color: var(--color-primary-dark); /* Ícone azul escuro */
     border-color: var(--color-gold);
 }
 
@@ -933,13 +981,13 @@ body {
     font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 400;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     margin-bottom: var(--space-xs);
 }
 
 .diferencial-item p {
     font-size: 0.9rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     line-height: 1.7;
 }
 
@@ -949,7 +997,7 @@ body {
 
 .galeria {
     padding: var(--space-2xl) 0;
-    background: var(--color-black);
+    background: var(--color-primary-dark); /* Azul escuro */
 }
 
 .galeria-grid {
@@ -957,6 +1005,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 300px);
     gap: var(--space-xs);
+    list-style: none;
 }
 
 .galeria-item {
@@ -964,6 +1013,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     border-radius: 2px;
+    margin: 0;
 }
 
 .galeria-item.large {
@@ -976,10 +1026,12 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform var(--transition-slow);
+    border: 1px solid rgba(212, 168, 55, 0.2); /* Borda dourada suave */
 }
 
 .galeria-item:hover img {
     transform: scale(1.1);
+    border-color: var(--color-gold);
 }
 
 .galeria-overlay {
@@ -988,7 +1040,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(11, 11, 11, 0.9) 0%, transparent 50%);
+    background: linear-gradient(to top, rgba(31, 63, 115, 0.9) 0%, transparent 50%); /* Gradiente azul */
     display: flex;
     align-items: flex-end;
     padding: var(--space-md);
@@ -1003,7 +1055,7 @@ body {
 .galeria-title {
     font-family: var(--font-serif);
     font-size: 1.25rem;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     transform: translateY(20px);
     transition: transform var(--transition-normal);
 }
@@ -1018,7 +1070,7 @@ body {
 
 .contato {
     padding: var(--space-2xl) 0;
-    background: linear-gradient(to bottom, var(--color-black), var(--color-green));
+    background: linear-gradient(to bottom, var(--color-primary-dark), var(--color-primary)); /* Gradiente azul */
     position: relative;
 }
 
@@ -1038,6 +1090,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
+    font-style: normal;
 }
 
 .info-item {
@@ -1052,47 +1105,54 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-gold);
-    border: var(--border-gold);
+    color: var(--color-gold); /* Dourado */
+    border: var(--border-gold); /* Borda dourada */
     border-radius: 50%;
     flex-shrink: 0;
     transition: all var(--transition-normal);
 }
 
 .info-item:hover .info-icon {
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-gold); /* Fundo dourado no hover */
+    color: var(--color-primary-dark); /* Ícone azul escuro */
 }
 
 .info-content h4 {
     font-family: var(--font-serif);
     font-size: 1.1rem;
     font-weight: 400;
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
     margin-bottom: 0.25rem;
 }
 
-.info-content p {
+.info-content p,
+.info-content a {
     font-size: 0.95rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     line-height: 1.6;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.info-content a:hover {
+    color: var(--color-gold); /* Dourado no hover */
 }
 
 .contato-map {
     height: 500px;
     border-radius: 4px;
     overflow: hidden;
-    border: var(--border-gold);
+    border: var(--border-gold); /* Borda dourada */
     box-shadow: var(--shadow-md);
 }
 
 .contato-map iframe {
-    filter: grayscale(100%) invert(92%) contrast(83%);
+    filter: grayscale(30%) brightness(0.9); /* Suave ajuste */
     transition: filter var(--transition-normal);
 }
 
 .contato-map:hover iframe {
-    filter: grayscale(50%) invert(92%) contrast(83%);
+    filter: grayscale(0%) brightness(1);
 }
 
 /* ============================================
@@ -1100,9 +1160,9 @@ body {
    ============================================ */
 
 .footer {
-    background: var(--color-black);
+    background: var(--color-primary-dark); /* Azul escuro */
     padding: var(--space-2xl) 0 var(--space-md);
-    border-top: var(--border-gold);
+    border-top: var(--border-gold); /* Borda dourada */
 }
 
 .footer-content {
@@ -1121,11 +1181,12 @@ body {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: var(--space-sm);
-    color: var(--color-cream);
+    color: var(--color-white); /* Branco */
 }
 
 .footer-logo .logo-icon {
     font-size: 2rem;
+    color: var(--color-gold); /* Dourado */
 }
 
 .footer-logo .logo-text {
@@ -1135,7 +1196,7 @@ body {
 
 .footer-tagline {
     font-size: 0.9rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
     font-style: italic;
 }
 
@@ -1151,7 +1212,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--color-gold);
+    color: var(--color-gold); /* Dourado */
     margin-bottom: var(--space-sm);
 }
 
@@ -1163,10 +1224,12 @@ body {
     margin-bottom: 0.75rem;
 }
 
-.footer-col a {
-    color: var(--color-gray-light);
+.footer-col a,
+.footer-col address a {
+    color: var(--color-white); /* Branco */
     text-decoration: none;
     font-size: 0.9rem;
+    font-style: normal;
     transition: color var(--transition-fast);
     position: relative;
     display: inline-block;
@@ -1179,12 +1242,12 @@ body {
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--color-gold);
+    background: var(--color-gold); /* Dourado */
     transition: width var(--transition-normal);
 }
 
 .footer-col a:hover {
-    color: var(--color-cream);
+    color: var(--color-gold); /* Dourado no hover */
 }
 
 .footer-col a:hover::after {
@@ -1213,12 +1276,13 @@ body {
 
 .footer-credits p {
     font-size: 0.85rem;
-    color: var(--color-gray-light);
+    color: var(--color-gray-light); /* Azul acinzentado claro */
 }
 
 .footer-social {
     display: flex;
     gap: var(--space-sm);
+    list-style: none;
 }
 
 .footer-social a {
@@ -1227,21 +1291,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-gray-light);
-    border: var(--border-gold);
+    color: var(--color-white); /* Branco */
+    border: 1px solid rgba(212, 168, 55, 0.3); /* Borda dourada suave */
     border-radius: 50%;
     transition: all var(--transition-normal);
 }
 
 .footer-social a:hover {
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-gold); /* Fundo dourado */
+    color: var(--color-primary-dark); /* Ícone azul escuro */
     border-color: var(--color-gold);
     transform: translateY(-3px);
 }
 
 /* ============================================
-   WHATSAPP FLOAT BUTTON
+   WHATSAPP FLOAT BUTTON - AJUSTADO
    ============================================ */
 
 .whatsapp-float {
@@ -1250,33 +1314,37 @@ body {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: #25D366;
-    color: white;
+    background: var(--color-gold); /* Dourado */
+    color: var(--color-primary-dark); /* Azul escuro */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 4px 20px rgba(212, 168, 55, 0.4); /* Sombra dourada */
     z-index: 999;
     transition: all var(--transition-normal);
     animation: pulse 2s infinite;
+    border: 2px solid var(--color-white); /* Borda branca para destaque */
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        box-shadow: 0 0 0 0 rgba(212, 168, 55, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 20px rgba(212, 168, 55, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 0 rgba(212, 168, 55, 0);
     }
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1) translateY(-5px);
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 8px 30px rgba(212, 168, 55, 0.5);
+    background: var(--color-white); /* Branco no hover */
+    color: var(--color-gold); /* Dourado */
+    border-color: var(--color-gold);
 }
 
 /* ============================================
@@ -1340,7 +1408,7 @@ body {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgba(11, 11, 11, 0.98);
+        background: rgba(31, 63, 115, 0.98); /* Azul escuro translúcido */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1355,6 +1423,7 @@ body {
     
     .nav-link {
         font-size: 1.25rem;
+        color: var(--color-white);
     }
     
     .nav-toggle {
