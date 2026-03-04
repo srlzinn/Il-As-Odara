@@ -6,8 +6,8 @@
 :root {
     /* Cores Principais - AZUL DOMINANTE */
     --color-primary-dark: #1F3F73;    /* Azul escuro - fundo principal */
-    --color-primary: #2E6DB4;          /* Azul médio - elementos secundários */
-    --color-gold: #D4A837;             /* Dourado elegante - detalhes */
+    --color-primary: #c7701e;          /* Azul médio - elementos secundários */
+    --color-gold: #c7701e;             /* Dourado elegante - detalhes */
     --color-white: #FFFFFF;             /* Branco - textos e botões */
     
     /* Cores de Apoio (ajustadas para nova paleta) */
@@ -413,8 +413,8 @@ body {
     justify-content: center;
     overflow: hidden;
     background: 
-        radial-gradient(ellipse at top, rgba(212, 168, 55, 0.15) 0%, transparent 60%), /* Brilho dourado */
-        radial-gradient(ellipse at bottom, rgba(46, 109, 180, 0.3) 0%, transparent 60%), /* Azul médio */
+        radial-gradient(ellipse at top, rgba(211, 131, 12, 0.15) 0%, transparent 60%), /* Brilho dourado */
+        radial-gradient(ellipse at bottom, rgba(180, 122, 46, 0.3) 0%, transparent 60%), /* Azul médio */
         var(--color-primary-dark); /* Fundo azul escuro */
 }
 

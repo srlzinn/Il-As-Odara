@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TÍTULO ESPECÍFICO DA PÁGINA -->
+    <title>Roupas Tradicionais | Ilê Asé Odara</title>
+    
+    <!-- META TAGS -->
+    <meta name="description" content="Roupas tradicionais para candomblé e umbanda - Camisus, ojás e vestimentas cerimoniais">
+    <meta name="theme-color" content="#1F3F73">
+    
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS PRINCIPAL (da raiz) - usando caminho relativo -->
+    <link rel="stylesheet" href="../../style.css">
+    
+    <!-- CSS ESPECÍFICO DESTA PÁGINA (opcional) -->
+    <link rel="stylesheet" href="roupas.css">
+</head>
+<body>
+    <!-- SKIP LINK -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- HEADER (copiado do index.html com links ajustados) -->
+    <header class="site-header">
+        <nav class="navbar" id="navbar" aria-label="Principal">
+            <div class="nav-container">
+                <a href="../../index.html" class="nav-logo" aria-label="Ilê Asé Odara - Página inicial">
+                    <span class="logo-icon" aria-hidden="true">✦</span>
+                    <span class="logo-text">Ilê Asé Odara</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu" role="list">
+                    <li role="listitem"><a href="../../index.html#home" class="nav-link">Início</a></li>
+                    <li role="listitem"><a href="../../index.html#manifesto" class="nav-link">Manifesto</a></li>
+                    <li role="listitem"><a href="../../index.html#colecoes" class="nav-link">Coleções</a></li>
+                    <li role="listitem"><a href="../../index.html#tradicao" class="nav-link">Tradição</a></li>
+                    <li role="listitem"><a href="../../index.html#galeria" class="nav-link">Galeria</a></li>
+                    <li role="listitem"><a href="../../index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA DE PRODUTOS -->
+    <main id="main-content">
+        
+        <!-- HEADER DA PÁGINA DE PRODUTO -->
+        <section class="page-header" style="padding-top: 120px;">
+            <div class="container">
+                <span class="section-label">Nossa Coleção</span>
+                <h1 class="section-title">Roupas Tradicionais</h1>
+                <p class="section-desc">Vestimentas cerimoniais confeccionadas com respeito às tradições</p>
+            </div>
+        </section>
+
+        <!-- GRID DE PRODUTOS -->
+        <section class="produtos-section" style="padding: var(--space-2xl) 0;">
+            <div class="container">
+                <div class="produtos-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-md);">
+                    
+                    <!-- Card Produto 1 -->
+                    <div class="colecao-card" data-produto="Camisu Branca Tradicional">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Camisu branca tradicional">
+                        </div>
+                        <div class="card-content">
+                            <h3>Camisu Branca Tradicional</h3>
+                            <p>Vestimenta cerimonial em algodão, renda fina e acabamento artesanal</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Camisu Branca Tradicional')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 2 -->
+                    <div class="colecao-card" data-produto="Ojá Torço de Oxalá">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1602607688737-cef3c33bd608?w=800&auto=format&fit=crop&q=80" alt="Ojá torço branco">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ojá Torço de Oxalá</h3>
+                            <p>Pano de cabeça em algodão, branco com detalhes em renda</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Ojá Torço de Oxalá')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 3 -->
+                    <div class="colecao-card" data-produto="Bata de Renda para Iyá">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Bata de renda">
+                        </div>
+                        <div class="card-content">
+                            <h3>Bata de Renda para Iyá</h3>
+                            <p>Bata branca com renda delicada, mangas longas, algodão premium</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Bata de Renda para Iyá')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 4 -->
+                    <div class="colecao-card" data-produto="Saiote de Oxum">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Saiote amarelo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Saiote de Oxum</h3>
+                            <p>Saiote amarelo ouro com bordados, para rituais e festas</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Saiote de Oxum')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 5 -->
+                    <div class="colecao-card" data-produto="Conjunto Completo de Iansã">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Conjunto de Iansã">
+                        </div>
+                        <div class="card-content">
+                            <h3>Conjunto Completo de Iansã</h3>
+                            <p>Bata, saia e ojá nas cores vermelho e vinho, tecido leve</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Conjunto Completo de Iansã')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 6 -->
+                    <div class="colecao-card" data-produto="Pano da Costa Africano">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&auto=format&fit=crop&q=80" alt="Pano da costa">
+                        </div>
+                        <div class="card-content">
+                            <h3>Pano da Costa Africano</h3>
+                            <p>Tecido estampado, utilizado para ombros e cintura</p>
+                            <button class="btn btn-primary" onclick="enviarWhatsApp('Pano da Costa Africano')" style="width: 100%; margin-top: 1rem;">
+                                Solicitar via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (copiado do index.html com links ajustados) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon" aria-hidden="true">✦</span>
+                        <span class="logo-text">Ilê Asé Odara</span>
+                    </div>
+                    <p class="footer-tagline">Tradição, Fé e Ancestralidade desde 2010</p>
+                </div>
+
+                <div class="footer-links">
+                    <nav class="footer-col" aria-labelledby="footer-nav-heading">
+                        <h4 id="footer-nav-heading">Navegação</h4>
+                        <ul>
+                            <li><a href="../../index.html#home">Início</a></li>
+                            <li><a href="../../index.html#manifesto">Manifesto</a></li>
+                            <li><a href="../../index.html#colecoes">Coleções</a></li>
+                            <li><a href="../../index.html#tradicao">Tradição</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-col" aria-labelledby="footer-collections-heading">
+                        <h4 id="footer-collections-heading">Coleções</h4>
+                        <ul>
+                            <li><a href="../p1/Roupas.html">Roupas Tradicionais</a></li>
+                            <li><a href="../p2/GuiasEColares.html">Guias e Colares</a></li>
+                            <li><a href="../p3/VelasEervas.html">Velas e Ervas</a></li>
+                            <li><a href="../p4/ImagensSagradas.html">Imagens Sagradas</a></li>
+                        </ul>
+                    </div>
+
+                    <address class="footer-col" aria-labelledby="footer-contact-heading">
+                        <h4 id="footer-contact-heading">Contato</h4>
+                        <ul>
+                            <li>Rua das Flores, 123</li>
+                            <li>São Paulo - SP</li>
+                            <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+                            <li><a href="mailto:contato@ileaseodara.com">contato@ileaseodara.com</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-line" aria-hidden="true"></div>
+                <div class="footer-credits">
+                    <p>&copy; 2025 Ilê Asé Odara. Todos os direitos reservados.</p>
+                    <ul class="footer-social" aria-label="Redes sociais">
+                        <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contato via WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="../../main.js" defer></script>
+    <script>
+        function enviarWhatsApp(produtoNome) {
+            const telefone = '5511999999999'; // Substitua pelo seu número
+            const mensagem = `Olá, gostaria de mais informações sobre o produto: *${produtoNome}* do Ilê Asé Odara`;
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html>
